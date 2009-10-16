@@ -8,13 +8,11 @@ use List::MoreUtils qw(any);
 use List::Util qw(shuffle);
 use UNIVERSAL::require;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 __PACKAGE__->mk_accessors($_) for qw(vectors centroids memberships m distance);
 
-use constant {
-    DEFAULT_M => 2.0,
-};
+use constant DEFAULT_M => 2.0;
 
 sub new {
     my $class = shift;

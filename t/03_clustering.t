@@ -3,12 +3,10 @@ use warnings;
 use Algorithm::FuzzyCmeans;
 use Test::More tests => 313;
 
-use constant {
-    NUM_DOCUMENT => 10,
-    NUM_KEY      => 30,
-    NUM_CLUSTER  => 3,
-    NUM_ITER     => 10,
-};
+use constant NUM_DOCUMENT => 10;
+use constant NUM_KEY      => 30;
+use constant NUM_CLUSTER  => 3;
+use constant NUM_ITER     => 10;
 
 my $threshold = 0.1;
 my $fcm = Algorithm::FuzzyCmeans->new(
